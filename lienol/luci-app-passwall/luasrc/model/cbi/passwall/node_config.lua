@@ -158,7 +158,6 @@ address:depends("type", "V2ray")
 address:depends("type", "Brook")
 address:depends("type", "Trojan")
 
---[[
 use_ipv6 = s:option(Flag, "use_ipv6", translate("Use IPv6"))
 use_ipv6.default = 0
 use_ipv6:depends("type", "Socks5")
@@ -167,7 +166,6 @@ use_ipv6:depends("type", "SSR")
 use_ipv6:depends("type", "V2ray")
 use_ipv6:depends("type", "Brook")
 use_ipv6:depends("type", "Trojan")
---]]
 
 port = s:option(Value, "port", translate("Port"))
 port.datatype = "port"
